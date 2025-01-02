@@ -9,6 +9,12 @@ setup(
     maintainer='Rohan Agrawal',
     maintainer_email='rohan@osrfoundation.org',
     keywords=['ROS'],
+    data_files=[
+    ('share/ament_index/resource_index/packages',
+     ['resource/teleop_twist_keyboard']),
+    ('share/teleop_twist_keyboard', ['package.xml']),
+],
+
     classifiers=[
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD',
