@@ -123,7 +123,7 @@ def main(args=None):
 			twist.angular.x = 0.0; twist.angular.y = 0.0; twist.angular.z = th*turn
 			pub.publish(twist)
 
-	except:
+	except Exception as e:
 		print(e)
 
 	finally:
